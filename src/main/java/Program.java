@@ -9,7 +9,7 @@ public class Program {
         System.out.println("department.name = " + department.name);
 
         Position position = new Position();
-        position.Position_id = 2;
+        position.Position_id = 1;
         position.name = PositionName.DEV;
         System.out.println("position.Position_id = " + position.Position_id);
         System.out.println("position.name = " + position.name);
@@ -17,6 +17,7 @@ public class Program {
         Account account = new Account();
         account.id = 1;
         account.User_name = "tui0123";
+        account.Full_name = "Nguyen Thanh Dat";
         account.email = "thanhdat@gmail.com";
         account.department = department;
         account.position = position;
@@ -25,6 +26,18 @@ public class Program {
         System.out.println("account.position = " + account.position);
         System.out.println("account.Create_date = " + account.Create_date);
 
+        Group group = new Group();
+        group.id = 1;
+        group.name = "Xây dựng";
+        group.creator = account;
+        group.Create_date = LocalDate.now();
+        System.out.println("group.creator = " + group.creator);
+
+        GroupAccount groupAccount = new GroupAccount();
+        groupAccount.group = group;
+        groupAccount.account = account;
+        groupAccount.Join_date = LocalDate.now();
+        System.out.println("groupAccount.group = " + groupAccount.group);
 
     }
 }
