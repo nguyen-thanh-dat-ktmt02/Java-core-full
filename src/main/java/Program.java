@@ -15,7 +15,7 @@ public class Program {
         System.out.println("position.name = " + position.name);
 
         Account account = new Account();
-        account.Account_id = 1;
+        account.id = 1;
         account.User_name = "tui0123";
         account.email = "thanhdat@gmail.com";
         account.department = department;

@@ -2,11 +2,11 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 
 public class Exam {
-    int Exam_id;
+    int id;
     String code;
     String title;
-    int CategoryID;
-    LocalTime Duration;
-    int Creator_id;
+    CategoryQuestion categoryQuestion;
+    LocalTime duration;
+    Account account;
     LocalDate create_date;
 }
