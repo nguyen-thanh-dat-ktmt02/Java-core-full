@@ -9,6 +9,13 @@ public class Program    {
         Ex2 ex2 =new Ex2();
         //ex2.eex2();
 
+        Ex3 ex3 = new Ex3();
+        //ex3.question01();
+        //ex3.question02();
+        //ex3.question03();
+
+        Ex4 ex4 = new Ex4();
+        ex4.question01();
 
     }
 }
